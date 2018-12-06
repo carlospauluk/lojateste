@@ -1,0 +1,41 @@
+{
+  "cartStyle": {
+    "type": "Variable",
+    "variable": "cart"
+  },
+  "cartContentStyle": {
+
+    "type": "Variable",
+    "variable": "cart_content"
+  },
+  "CartMargin": {
+    "type": "Margin",
+    "selector": ".desktop-header-active #cart"
+  },
+  "cartPosition": {
+    "type": "Radio",
+    "value": "top",
+    "rules": {
+      "@": {
+        "": ""
+      }
+    },
+    "php": true
+  },
+  "cartWidth": {
+    "type": "InputNumber",
+    "rules":{
+      "@":{
+        ".desktop-header-active #cart": "max-width:%spx"
+      }
+    }
+  },
+  "cartHeight": {
+    "type": "InputNumber",
+    "rules":{
+      "@":{
+        ".desktop-header-active #cart > a": "height:%spx"
+      }
+    }
+  }
+}

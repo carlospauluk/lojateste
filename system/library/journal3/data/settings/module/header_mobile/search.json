@@ -1,0 +1,58 @@
+{
+  "headerMobileSearchIcon": {
+    "type": "Icon",
+    "selector": ".mobile-header-active  .mini-search .search-trigger::before"
+  },
+  "headerMobileSearchIconBG": {
+    "type": "Background",
+    "selector": ".mobile-header-active  .mini-search .search-trigger"
+  },
+  "searchStyle": {
+    "type": "Variable",
+    "variable": "search",
+    "selector_prefix": ".mobile-header-active"
+  },
+  "headerMobileSearchWidth": {
+    "type": "InputNumber",
+    "value": "50",
+    "rules":{
+      "@":{
+        ".mobile-header-active .mini-search .search-trigger": "width:%spx"
+      }
+    }
+  },
+  "headerMobileSearchPadding": {
+    "type": "InputNumber",
+    "rules":{
+      "@":{
+        ".mobile-header-active .mobile-1 .header-search": "padding:%spx",
+        ".mobile-header-active .mobile-search-group": "padding:%spx",
+        ".mobile-header-active .mobile-3 .mobile-search-wrapper": "padding:0 %spx"
+      }
+    }
+  },
+  "headerMobileSearchHeight": {
+    "type": "InputNumber",
+    "value": "35",
+    "rules":{
+      "@":{
+        ".mobile-header-active .header-search": "height:%spx",
+        ".mobile-header-active #cart > a > i": "height:%spx",
+        ".mobile-header-active .menu-trigger": "height:%spx"
+      }
+    }
+  },
+  "headerMobileSearchBG": {
+    "type": "Background",
+    "selector": ".mobile-header-active .mobile-search-group, .mobile-header-active .mobile-1 .header-search"
+  },
+  "headerMobileSearchShadow": {
+    "type": "Shadow",
+    "selector": ".mobile-header-active .mobile-search-group, .mobile-header-active .mobile-1 .header-search"
+  },
+  "headerMobileSearchTriangle": {
+    "include": "triangle",
+    "selector_prefix": ".mobile-header-active .mobile-1 #search > .dropdown-menu"
+  }
+}
+

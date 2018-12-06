@@ -1,0 +1,23 @@
+{
+  "name": {
+    "type": "Input",
+    "value": "Field"
+  },
+  "status": {
+    "type": "Status"
+  },
+  "label": {
+    "type": "InputLang",
+    "php": true
+  },
+  "type": {
+    "type": "Select",
+    "value": "text",
+    "php": true
+  },
+  "required": {
+    "type": "Toggle",
+    "value": "false",
+    "php": true
+  }
+}

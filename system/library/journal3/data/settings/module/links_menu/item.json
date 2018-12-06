@@ -1,0 +1,58 @@
+{
+  "name": {
+    "type": "Input",
+    "value": "New Item"
+  },
+  "status": {
+    "type": "Status"
+  },
+  "title": {
+    "type": "InputLang",
+    "php": true
+  },
+  "icon": {
+    "type": "Icon",
+    "selector": ".links-menu-%s .links-menu-item-%s > a::before"
+  },
+  "itemPadding": {
+    "type": "Padding",
+    "selector": ".links-menu-%s .links-menu-item-%s a"
+  },
+  "iconHover": {
+    "type": "Color",
+    "selector": ".links-menu-%s .links-menu-item-%s:hover a::before",
+    "property": "color"
+  },
+  "iconBG": {
+    "type": "Background",
+    "selector": ".links-menu-%s .links-menu-item-%s a::before"
+  },
+  "iconBGHover": {
+    "type": "Background",
+    "selector": ".links-menu-%s .links-menu-item-%s:hover a::before"
+  },
+  "link": {
+    "type": "Link",
+    "php": true
+  },
+  "itemBackground": {
+    "type": "Background",
+    "selector": ".links-menu-%s .links-menu-item-%s"
+  },
+  "itemBackgroundHover": {
+    "type": "Background",
+    "selector": ".links-menu-%s .links-menu-item-%s:hover"
+  },
+  "itemPadding": {
+    "type": "Padding",
+    "selector": ".links-menu-%s .links-menu-item-%s a"
+  },
+  "itemFont": {
+    "type": "Font",
+    "selector": ".links-menu-%s .links-menu-item-%s a .links-text"
+  },
+  "itemFontHover": {
+    "type": "Font",
+    "selector": ".links-menu-%s .links-menu-item-%s:hover a .links-text"
+  }
+}

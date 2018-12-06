@@ -1,0 +1,40 @@
+{
+  "headerTopMenu2": {
+    "type": "Module",
+    "php": true
+  },
+  "secondaryMenuPosition": {
+    "type": "Radio",
+    "value": "top",
+    "php": true
+  },
+  "menu2": {
+    "type": "Variable",
+    "variable": "menu",
+    "selector_prefix": ".secondary-menu .top-menu"
+  },
+  "dropdown2": {
+    "type": "Variable",
+    "variable": "dropdown",
+    "selector_prefix": ".secondary-menu .menu-item"
+  },
+  "secondaryMenuMargin": {
+    "type": "Margin",
+    "selector": ".mid-bar .secondary-menu .top-menu"
+  },
+  "secondaryMenuAlign": {
+    "type": "Radio",
+    "value": "right",
+    "rules": {
+      "left": {
+        ".mid-bar .secondary-menu": "justify-content:flex-start"
+      },
+      "center": {
+        ".mid-bar .secondary-menu": "justify-content:center"
+      },
+      "right": {
+        ".mid-bar .secondary-menu": "justify-content:flex-end"
+      }
+    }
+  }
+}

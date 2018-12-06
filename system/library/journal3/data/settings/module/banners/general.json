@@ -1,0 +1,459 @@
+{
+  "name": {
+    "type": "Input",
+    "value": "New Banners"
+  },
+  "status": {
+    "type": "Status"
+  },
+  "schedule": {
+    "type": "Range",
+    "php": true
+  },
+  "title": {
+    "type": "InputLang",
+    "php": true
+  },
+  "moduleTitle": {
+    "type": "Variable",
+    "variable": "title",
+    "selector_prefix": ".module-banners-%s .title.module-title"
+  },
+  "carousel": {
+    "type": "Toggle",
+    "value": "false",
+    "php": true
+  },
+  "carouselStyle": {
+    "type": "Variable",
+    "variable": "carousel",
+    "selector_prefix": ".module-banners-%s"
+  },
+  "itemsPerRow": {
+    "type": "ItemsPerRow",
+    "selector": ".module-banners-%s .module-item",
+    "php": true
+  },
+  "containerMargin": {
+    "type": "Margin",
+    "selector": ".module-banners-%s:not(.carousel-mode) .module-body"
+  },
+  "carouselGutter": {
+    "type": "Padding",
+    "selector": ".module-banners-%s .swiper-container"
+  },
+
+  "imageDimensions": {
+    "type": "ImageDimensions",
+    "php": true,
+    "value": {
+      "resize": "fill",
+      "tablet_resize": "fill",
+      "phone_resize": "fill"
+    }
+  },
+
+  "hoverIcon": {
+    "type": "Icon",
+    "selector": ".module-banners-%s .module-item > a::after"
+  },
+
+  "background": {
+    "type": "Background",
+    "selector": ".module-banners-%s .module-item > a"
+  },
+  "scaleHover": {
+    "type": "Toggle",
+    "value": "false",
+    "rules": {
+      "true": {
+        ".module-banners-%s a img": "transform: scale(1)",
+        ".desktop .module-banners-%s a:hover img": "transform: scale(1.15)"
+      },
+      "false": {
+        ".module-banners-%s a img": "transform: scale(1);"
+      }
+    }
+  },
+  "hoverBackground": {
+    "type": "Background",
+    "selector": ".module-banners-%s .module-item > a::before"
+  },
+
+  "overlayDisplay": {
+    "type": "Radio",
+    "value": "hover",
+    "rules": {
+      "hover": {
+        ".module-banners-%s a::before": "opacity:0",
+        ".desktop .module-banners-%s a:hover::before": "opacity:1"
+      },
+      "always": {
+        ".module-banners-%s a::before": "opacity:1"
+      }
+    }
+  },
+
+  "iconDisplay": {
+    "type": "Radio",
+    "value": "hover",
+    "rules": {
+      "hover": {
+        ".module-banners-%s a::after": "opacity:0; transform: translate(-50%, -50%) scale(.5)",
+        ".desktop .module-banners-%s a:hover::after": "opacity:1; transform: translate(-50%, -50%) scale(1)"
+      },
+      "always": {
+        ".module-banners-%s a::after": "opacity:1; transform: translate(-50%, -50%) scale(1)"
+      }
+    }
+  },
+
+  "iconMargin": {
+    "type": "Margin",
+    "selector": ".module-banners-%s a::after"
+  },
+
+  "iconMarginHover": {
+    "type": "Margin",
+    "selector": ".desktop .module-banners-%s a:hover::after"
+  },
+
+
+  "imageBorder": {
+    "type": "Border",
+    "selector": ".module-banners-%s .module-item > a"
+  },
+  "imageBorderHover": {
+    "type": "Color",
+    "selector": ".module-banners-%s .module-item:hover > a",
+    "property": "border-color",
+    "desktop":true
+  },
+  "imageBorderRadius": {
+    "type": "BorderRadius",
+    "selector": ".module-banners-%s .module-item > a"
+  },
+  "imageShadow": {
+    "type": "Shadow",
+    "selector": ".module-banners-%s .module-item > a"
+  },
+  "imageShadowHover": {
+    "type": "Shadow",
+    "selector": ".module-banners-%s .module-item:hover > a",
+    "desktop":true
+  },
+  "grayscale": {
+    "type": "Radio",
+    "value": "",
+    "rules": {
+      "none": {
+        ".module-banners-%s .module-item > a img": "filter: grayscale(0)"
+      },
+      "always": {
+        ".module-banners-%s .module-item > a img": "filter: grayscale(1)"
+      },
+      "hover": {
+        ".module-banners-%s .module-item > a img": "filter: grayscale(1)",
+        ".module-banners-%s .module-item > a:hover img": "filter: grayscale(0)"
+      }
+    }
+  },
+
+
+
+
+
+
+
+  "bannerTitleContainer": {
+    "type": "Variable",
+    "variable": "container",
+    "selector_prefix": ".module-banners-%s .banner-caption span"
+  },
+  "bannerTitle2Container": {
+    "type": "Variable",
+    "variable": "container",
+    "selector_prefix": ".module-banners-%s .banner-caption-2 span"
+  },
+  "titlePosition": {
+    "type": "Radio",
+    "value": "center",
+    "rules": {
+      "tl": {
+        ".module-banners-%s .banner-caption": "top:0; left:0; right:auto; bottom: auto; transform: translate3d(0, 0, 0)"
+      },
+      "tc": {
+        ".module-banners-%s .banner-caption": "top:0; left:50%; right:auto; bottom: auto; transform: translate3d(-50%, 0, 0)"
+      },
+      "tr": {
+        ".module-banners-%s .banner-caption": "top:0; left:auto; right:0; bottom: auto; transform: translate3d(0, 0, 0)"
+      },
+      "center": {
+        ".module-banners-%s .banner-caption": "top:50%; left:50%; right:auto; bottom: auto; transform: translate3d(-50%, -50%, 0)"
+      },
+      "bl": {
+        ".module-banners-%s .banner-caption": "top:auto; left:0; right:auto; bottom: 0; transform: translate3d(0, 0, 0)"
+      },
+      "bc": {
+        ".module-banners-%s .banner-caption": "top:auto; left:50%; right:auto; bottom: 0; transform: translate3d(-50%, 0, 0)"
+      },
+      "br": {
+        ".module-banners-%s .banner-caption": "top:auto; left:auto; right:0; bottom: 0; transform: translate3d(0, 0, 0)"
+      }
+    }
+  },
+
+  "titleScale": {
+    "type": "InputSlider",
+    "value": "100",
+    "rules": {
+      "@": {
+        ".module-banners-%s .banner-caption span": "transform:scale(calc(%s / 100))"
+      }
+    }
+  },
+
+  "titleScaleOrigin": {
+    "type": "Radio",
+    "value": "center",
+    "rules": {
+      "tl": {
+        ".module-banners-%s .banner-caption span": "transform-origin: top left"
+      },
+      "tr": {
+        ".module-banners-%s .banner-caption span": "transform-origin: top right"
+      },
+      "center": {
+        ".module-banners-%s .banner-caption span": "transform-origin: center"
+      },
+      "bl": {
+        ".module-banners-%s .banner-caption span": "transform-origin: bottom left"
+      },
+      "br": {
+        ".module-banners-%s .banner-caption span": "transform-origin: bottom right"
+      }
+    }
+  },
+
+  "title2Scale": {
+    "type": "InputSlider",
+    "value": "100",
+    "rules": {
+      "@": {
+        ".module-banners-%s .banner-caption-2 span": "transform:scale(calc(%s / 100))"
+      }
+    }
+  },
+
+  "title2ScaleOrigin": {
+    "type": "Radio",
+    "value": "center",
+    "rules": {
+      "tl": {
+        ".module-banners-%s .banner-caption-2 span": "transform-origin: top left"
+      },
+      "tr": {
+        ".module-banners-%s .banner-caption-2 span": "transform-origin: top right"
+      },
+      "center": {
+        ".module-banners-%s .banner-caption-2 span": "transform-origin: center"
+      },
+      "bl": {
+        ".module-banners-%s .banner-caption-2 span": "transform-origin: bottom left"
+      },
+      "br": {
+        ".module-banners-%s .banner-caption-2 span": "transform-origin: bottom right"
+      }
+    }
+  },
+
+  "titleDisplay": {
+    "type": "Radio",
+    "value": "hover",
+    "rules": {
+      "hover": {
+        ".module-banners-%s .banner-caption": "visibility:hidden; opacity:0; display:block",
+        ".desktop .module-banners-%s a:hover .banner-caption": "visibility:visible; opacity:1"
+      },
+      "always": {
+        ".module-banners-%s a .banner-caption": "visibility:visible; opacity:1; display:block"
+      },
+      "never": {
+        ".module-banners-%s a .banner-caption": "display:none"
+      }
+    }
+  },
+  "titleWidth": {
+    "type": "Radio",
+    "value": "full",
+    "rules": {
+      "auto": {
+        ".module-banners-%s a .banner-caption": "width:auto"
+      },
+      "full": {
+        ".module-banners-%s a .banner-caption": "width:100%"
+      }
+    }
+  },
+  "titleFont": {
+    "type": "Font",
+    "selector": ".module-banners-%s .banner-caption span"
+  },
+  "titleFontHover": {
+    "type": "Font",
+    "selector": ".module-banners-%s .banner-caption:hover span",
+    "desktop":true
+  },
+  "titleBackground": {
+    "type": "Background",
+    "selector": ".module-banners-%s .banner-caption span"
+  },
+  "titleBackgroundHover": {
+    "type": "Background",
+    "selector": ".module-banners-%s a:hover .banner-caption span",
+    "desktop":true
+  },
+  "titleIcon": {
+    "type": "Icon",
+    "selector": ".module-banners-%s .banner-caption span::after"
+  },
+  "titleIconHover": {
+    "type": "Color",
+    "selector": ".module-banners-%s .banner-caption:hover span::after",
+    "property": "color",
+    "desktop":true
+  },
+
+  "titleMargin": {
+    "type": "Margin",
+    "selector": ".module-banners-%s .banner-caption span"
+  },
+
+  "titleMarginHover": {
+    "type": "Margin",
+    "selector": ".desktop .module-banners-%s a:hover .banner-caption span"
+  },
+
+  "titleBorder": {
+    "type": "Border",
+    "selector": ".module-banners-%s .banner-caption span"
+  },
+  "titleBorderRadius": {
+    "type": "BorderRadius",
+    "selector": ".module-banners-%s .banner-caption span"
+  },
+  "titlePadding": {
+    "type": "Padding",
+    "selector": ".module-banners-%s .banner-caption span",
+    "value": {
+      "padding":"10"
+    }
+  },
+  "title2BorderRadius": {
+    "type": "BorderRadius",
+    "selector": ".module-banners-%s .banner-caption-2 span"
+  },
+
+  "title2Position": {
+    "type": "Radio",
+    "value": "bc",
+    "rules": {
+      "tl": {
+        ".module-banners-%s .banner-caption-2": "top:0; left:0; right:auto; bottom: auto; transform: translate3d(0, 0, 0)"
+      },
+      "tc": {
+        ".module-banners-%s .banner-caption-2": "top:0; left:50%; right:auto; bottom: auto; transform: translate3d(-50%, 0, 0)"
+      },
+      "tr": {
+        ".module-banners-%s .banner-caption-2": "top:0; left:auto; right:0; bottom: auto; transform: translate3d(0, 0, 0)"
+      },
+      "center": {
+        ".module-banners-%s .banner-caption-2": "top:50%; left:50%; right:auto; bottom: auto; transform: translate3d(-50%, -50%, 0)"
+      },
+      "bl": {
+        ".module-banners-%s .banner-caption-2": "top:auto; left:0; right:auto; bottom: 0; transform: translate3d(0, 0, 0)"
+      },
+      "bc": {
+        ".module-banners-%s .banner-caption-2": "top:auto; left:50%; right:auto; bottom: 0; transform: translate3d(-50%, 0, 0)"
+      },
+      "br": {
+        ".module-banners-%s .banner-caption-2": "top:auto; left:auto; right:0; bottom: 0; transform: translate3d(0, 0, 0)"
+      }
+    }
+  },
+  "title2Display": {
+    "type": "Radio",
+    "value": "hover",
+    "rules": {
+      "hover": {
+        ".module-banners-%s .banner-caption-2": "visibility:hidden; opacity:0; display:block",
+        ".desktop .module-banners-%s a:hover .banner-caption-2": "visibility:visible; opacity:1"
+      },
+      "always": {
+        ".module-banners-%s a .banner-caption-2": "visibility:visible; opacity:1; display:block"
+      },
+      "never": {
+        ".module-banners-%s a .banner-caption-2": "display:none"
+      }
+    }
+  },
+  "title2Width": {
+    "type": "Radio",
+    "value": "full",
+    "rules": {
+      "auto": {
+        ".module-banners-%s a .banner-caption-2": "width:auto"
+      },
+      "full": {
+        ".module-banners-%s a .banner-caption-2": "width:100%"
+      }
+    }
+  },
+  "title2Font": {
+    "type": "Font",
+    "selector": ".module-banners-%s .banner-caption-2 span"
+  },
+  "title2FontHover": {
+    "type": "Font",
+    "selector": ".module-banners-%s .banner-caption-2:hover span",
+    "desktop":true
+  },
+  "title2Background": {
+    "type": "Background",
+    "selector": ".module-banners-%s .banner-caption-2 span"
+  },
+  "title2BackgroundHover": {
+    "type": "Background",
+    "selector": ".module-banners-%s a:hover .banner-caption-2 span",
+    "desktop":true
+  },
+  "title2Icon": {
+    "type": "Icon",
+    "selector": ".module-banners-%s .banner-caption-2 span::after"
+  },
+  "title2IconHover": {
+    "type": "Color",
+    "selector": ".module-banners-%s .banner-caption-2:hover span::after",
+    "property": "color",
+    "desktop":true
+  },
+  "title2Margin": {
+    "type": "Margin",
+    "selector": ".module-banners-%s .banner-caption-2 span"
+  },
+  "title2MarginHover": {
+    "type": "Margin",
+    "selector": ".desktop .module-banners-%s a:hover .banner-caption-2 span"
+  },
+  "title2Border": {
+    "type": "Border",
+    "selector": ".module-banners-%s .banner-caption-2 span"
+  },
+  "title2Padding": {
+    "type": "Padding",
+    "selector": ".module-banners-%s .banner-caption-2 span",
+    "value": {
+      "padding":"10"
+    }
+  }
+}

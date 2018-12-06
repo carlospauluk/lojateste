@@ -1,0 +1,56 @@
+{
+  "Font": {
+    "type": "Font",
+    "selector": ".count-badge"
+  },
+  "FontHover": {
+    "type": "Color",
+    "selector": "a:hover .count-badge",
+    "property": "color",
+    "desktop":true
+  },
+  "Background": {
+    "type": "Background",
+    "selector": ".count-badge"
+  },
+  "BackgroundHover": {
+    "type": "Background",
+    "selector": "a:hover .count-badge",
+    "desktop":true
+  },
+  "Shadow": {
+    "type": "Shadow",
+    "selector": ".count-badge"
+  },
+  "ShadowHover": {
+    "type": "Shadow",
+    "selector": "a:hover .count-badge",
+    "desktop":true
+  },
+  "Border": {
+    "type": "Border",
+    "selector": ".count-badge"
+  },
+  "BorderHover": {
+    "type": "Color",
+    "selector": "a:hover .count-badge",
+    "property": "border-color",
+    "desktop":true
+  },
+  "BorderRadius": {
+    "type": "BorderRadius",
+    "selector": ".count-badge"
+  },
+  "ShowEmpty": {
+    "type": "Toggle",
+    "value": "",
+    "rules": {
+      "true": {
+        ".count-badge.count-zero": "display: inline-flex"
+      },
+      "false": {
+        ".count-badge.count-zero": "display: none"
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "catalogLanguageStatus": {
+    "type": "Toggle",
+    "value": "true",
+    "php": true
+  },
+  "catalogCurrencyStatus": {
+    "type": "Toggle",
+    "value": "true",
+    "php": true
+  },
+  "catalogSearchStatus": {
+    "type": "Toggle",
+    "value": "true",
+    "php": true
+  },
+  "catalogMiniCartStatus": {
+    "type": "Toggle",
+    "value": "true",
+    "php": true
+  },
+  "catalogCartStatus": {
+    "type": "Toggle",
+    "value": "true",
+    "php": true
+  },
+  "catalogWishlistStatus": {
+    "type": "Toggle",
+    "value": "true",
+    "php": true
+  },
+  "catalogCompareStatus": {
+    "type": "Toggle",
+    "value": "true",
+    "php": true
+  }
+}

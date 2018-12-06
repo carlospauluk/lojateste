@@ -1,0 +1,110 @@
+{
+  "BreadcrumbsVisibility": {
+    "type": "Toggle",
+    "rules": {
+      "true": {
+        ".breadcrumb": "display: block !important"
+      },
+      "false": {
+        ".breadcrumb": "display: none !important"
+      }
+    }
+  },
+  "BreadcrumbsAlign": {
+    "type": "Radio",
+    "value": "left",
+    "rules": {
+      "left": {
+        ".breadcrumb": "text-align:left"
+      },
+      "center": {
+        ".breadcrumb": "text-align:center"
+      },
+      "right": {
+        ".breadcrumb": "text-align:right"
+      }
+    },
+    "rtlRules": {
+      "left": {
+        ".breadcrumb": "text-align:right"
+      },
+      "center": {
+        ".breadcrumb": "text-align:center"
+      },
+      "right": {
+        ".breadcrumb": "text-align:left"
+      }
+    }
+  },
+  "BreadcrumbsBackground": {
+    "type": "Background",
+    "selector": ".breadcrumb"
+  },
+  "BreadcrumbsFullBackground": {
+    "type": "Background",
+    "selector": ".breadcrumb::before"
+  },
+  "BreadcrumbsPadding": {
+    "type": "Padding",
+    "selector": ".breadcrumb"
+  },
+  "BreadcrumbsMargin": {
+    "type": "Margin",
+    "selector": ".breadcrumb"
+  },
+  "BreadcrumbsBorder": {
+    "type": "Border",
+    "selector": ".breadcrumb"
+  },
+  "FullBreadcrumbsBorder": {
+    "type": "Border",
+    "selector": ".breadcrumb::before"
+  },
+  "BreadcrumbsBorderRadius": {
+    "type": "BorderRadius",
+    "selector": ".breadcrumb"
+  },
+  "BreadcrumbsHomeIcon": {
+    "type": "Icon",
+    "selector": ".breadcrumb li:first-of-type a i::before"
+  },
+  "BreadcrumbsHomeIconHover": {
+    "type": "Color",
+    "selector": ".breadcrumb li:first-of-type a:hover i::before",
+    "property": "color"
+  },
+  "BreadcrumbsFont": {
+    "type": "Font",
+    "selector": ".breadcrumb a"
+  },
+  "BreadcrumbsFontHover": {
+    "type": "Font",
+    "selector": ".breadcrumb a:hover"
+  },
+  "BreadcrumbsFontActive": {
+    "type": "Font",
+    "selector": ".breadcrumb li:last-of-type a"
+  },
+  "BreadcrumbsSymbolPadding": {
+    "type": "Padding",
+    "selector": ".breadcrumb > li + li:before"
+  },
+  "BreadcrumbsSymbol": {
+    "type": "Input",
+    "selector": ".breadcrumb > li + li:before",
+    "property": "content: '%s'"
+  },
+  "BreadcrumbsSymbolColor": {
+    "type": "Color",
+    "selector": ".breadcrumb > li + li:before",
+    "property": "color"
+  },
+  "BreadcrumbsSymbolOffset": {
+    "type": "InputPair",
+    "selector": ".breadcrumb > li + li:before",
+    "properties": {
+      "first": "left: %spx",
+      "second": "top: %spx"
+    }
+  }
+}
